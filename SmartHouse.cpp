@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-#include "UpTime.cpp"
+
 using namespace std;
 
 
@@ -30,7 +30,7 @@ int main() {
 		std::cout << "Please enter sensors readings\n";
 		cout << "Temp outside, Temp inside, Movements outside(yes/no), Lights in the house(on/off):\n";
 		getline(cin, input);
-		buffer.str(input); // func parsing
+		buffer.str(input);
 		buffer >> temp_out >> temp_in >> mov_out >> lights_in_house;
 		cout << buffer.str() <<'\n';
 		buffer.str("");
